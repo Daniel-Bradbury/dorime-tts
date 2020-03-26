@@ -1,30 +1,32 @@
 ﻿using System;
 using System.Media;
+using System.IO;
+using System.Reflection;
 namespace Dorime_TTS
 {
     class Dorime
     {
-        static SoundPlayer _a = new SoundPlayer(@"./audio/a.wav");
-        static SoundPlayer _a2 = new SoundPlayer(@"./audio/a2.wav");
-        static SoundPlayer _d = new SoundPlayer(@"./audio/d.wav");
-        static SoundPlayer _da = new SoundPlayer(@"./audio/da.wav");
-        static SoundPlayer _do = new SoundPlayer(@"./audio/do.wav");
-        static SoundPlayer _i = new SoundPlayer(@"./audio/i.wav");
-        static SoundPlayer _la = new SoundPlayer(@"./audio/la.wav");
-        static SoundPlayer _me = new SoundPlayer(@"./audio/me.wav");
-        static SoundPlayer _me2 = new SoundPlayer(@"./audio/me2.wav");
-        static SoundPlayer _mo = new SoundPlayer(@"./audio/mo.wav");
-        static SoundPlayer _mo2 = new SoundPlayer(@"./audio/mo2.wav");
-        static SoundPlayer _n = new SoundPlayer(@"./audio/n.wav");
-        static SoundPlayer _no = new SoundPlayer(@"./audio/no.wav");
-        static SoundPlayer _o = new SoundPlayer(@"./audio/o.wav");
-        static SoundPlayer _pa = new SoundPlayer(@"./audio/pa.wav");
-        static SoundPlayer _re = new SoundPlayer(@"./audio/re.wav");
-        static SoundPlayer _re2 = new SoundPlayer(@"./audio/re2.wav");
-        static SoundPlayer _ri = new SoundPlayer(@"./audio/ri.wav");
-        static SoundPlayer _t = new SoundPlayer(@"./audio/t.wav");
-        static SoundPlayer _te = new SoundPlayer(@"./audio/te.wav");
-        static SoundPlayer _ti = new SoundPlayer(@"./audio/ti.wav");
+        static SoundPlayer _a = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/a.wav");
+        static SoundPlayer _a2 = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/a2.wav");
+        static SoundPlayer _d = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/d.wav");
+        static SoundPlayer _da = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/da.wav");
+        static SoundPlayer _do = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/do.wav");
+        static SoundPlayer _i = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/i.wav");
+        static SoundPlayer _la = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/la.wav");
+        static SoundPlayer _me = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/me.wav");
+        static SoundPlayer _me2 = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/me2.wav");
+        static SoundPlayer _mo = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/mo.wav");
+        static SoundPlayer _mo2 = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/mo2.wav");
+        static SoundPlayer _n = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/n.wav");
+        static SoundPlayer _no = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/no.wav");
+        static SoundPlayer _o = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/o.wav");
+        static SoundPlayer _pa = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/pa.wav");
+        static SoundPlayer _re = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/re.wav");
+        static SoundPlayer _re2 = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/re2.wav");
+        static SoundPlayer _ri = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/ri.wav");
+        static SoundPlayer _t = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/t.wav");
+        static SoundPlayer _te = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/te.wav");
+        static SoundPlayer _ti = new SoundPlayer(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+@"/audio/ti.wav");
         static Boolean Sound(String inp)
         {
             if (soundArray[position] == inp)
