@@ -69,8 +69,8 @@ namespace Dorime_TTS
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("Dorime-TTS");
-            Dorime.TTS(new String[] {"la", "ti", "n", "do", "ri", "t", "o"});
+            Console.WriteLine("Playing...");
+            Dorime.TTS(args);
         }
     }
 }
